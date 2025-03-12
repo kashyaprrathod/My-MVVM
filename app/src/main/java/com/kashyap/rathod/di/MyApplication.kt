@@ -6,7 +6,6 @@ import com.kashyap.rathod.data.room.AppDatabase
 import com.kashyap.rathod.di.remote.ApiInterface
 import com.kashyap.rathod.di.remote.ApiRepositoryImpl
 import com.kashyap.rathod.di.remote.RetrofitBuilder
-import com.pixplicity.easyprefs.library.Prefs
 
 class MyApplication : Application() {
 
@@ -21,14 +20,6 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-
-        //Shared Prefs
-        Prefs.Builder()
-            .setContext(this)
-            .setMode(MODE_PRIVATE)
-            .setPrefsName(packageName)
-            .setUseDefaultSharedPreference(true)
-            .build()
 
         //Room
         db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "mvvm").build()

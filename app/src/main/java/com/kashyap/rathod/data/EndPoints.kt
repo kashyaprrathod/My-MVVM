@@ -7,7 +7,7 @@ import com.kashyap.rathod.data.EndPoints.URLs.v1
 object EndPoints {
 
     object URLs {
-        const val BaseUrl: String = "URL"
+        const val BaseUrl: String = "https://api.rathod.com/"
         const val v1 = "v1/"
     }
 
