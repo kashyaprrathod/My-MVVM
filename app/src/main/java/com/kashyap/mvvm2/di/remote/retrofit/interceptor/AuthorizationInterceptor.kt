@@ -6,7 +6,6 @@ import okhttp3.Response
 class AuthorizationInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
-
         val mainResponse = chain.proceed(chain.request())
         if (mainResponse.code == 403 || mainResponse.code == 401) {
             if (!chain.request().url.toString().contains("login")) {
