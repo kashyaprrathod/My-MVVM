@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "234515857674",
+    "project_id": "light-body-technology-app",
+    "storage_bucket": "light-body-technology-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234515857674:android:608e2559383132ec3cfaf3",
+        "android_client_info": {
+          "package_name": "com.kashyap.mvvm_3_0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234515857674-1jq33phmvmb2qj506lkbt5o7njr1gomf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kashyap.mvvm_3_0",
+            "certificate_hash": "b96ab64743a9a5fc1aedbdeb62b040341c9e1716"
+          }
+        },
+        {
+          "client_id": "234515857674-7oainqa814vm2giehpvbaj6mpm8ud83f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKRsfBZM4CFLP3eTiKiJ0fiqwiN-FY0n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234515857674-7oainqa814vm2giehpvbaj6mpm8ud83f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "234515857674-q12kv4u918eccjd6ajop39jpsjn5421c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kashyap.mvvm_3_0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

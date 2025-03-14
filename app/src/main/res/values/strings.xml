@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My MVVM</string>
+    <string name="app_name">Mvvm - 3.0</string>
 
     <!-- Date Time Utils -->
     <string name="time_ago_now">few moments ago</string>
@@ -12,7 +12,6 @@
     <string name="time_ago_full_days">%1$d days ago</string>
     <string name="time_ago_full_month">%1$d month ago</string>
     <string name="time_ago_full_months">%1$d months ago</string>
-
     <string name="time_ago_seconds">%1$d sec ago</string>
     <string name="time_ago_minute">%1$d min ago</string>
     <string name="time_ago_minutes">%1$d min ago</string>
@@ -22,4 +21,8 @@
     <string name="time_ago_days">%1$d d ago</string>
     <string name="time_ago_month">%1$d m ago</string>
     <string name="time_ago_months">%1$d m ago</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="settings">Settings</string>
 </resources>
