@@ -10,6 +10,15 @@ import javax.inject.Inject
 
 open class AppViewModel @Inject constructor() : ViewModel() {
 
+    @Inject
+    lateinit var apiRepository: RepositoryImpl
+
+    @Inject
+    lateinit var firebaseRepository: FirebaseRepositoryImpl
+
+    @Inject
+    lateinit var databaseRepositoryImpl: DatabaseImpl
+
     @JvmField
     val obrClick: SingleLiveEvent<View> = SingleLiveEvent()
 }

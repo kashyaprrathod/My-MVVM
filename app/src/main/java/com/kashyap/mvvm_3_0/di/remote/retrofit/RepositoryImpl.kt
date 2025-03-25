@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
 
-class RepositoryImpl @Inject constructor(val apiInterface: ApiInterface) {
+class RepositoryImpl @Inject constructor(private val apiInterface: ApiInterface) {
 
     fun sampleApiCall(): Flow<Resource<Any>> = flow {
         emit(Resource.loading(null))

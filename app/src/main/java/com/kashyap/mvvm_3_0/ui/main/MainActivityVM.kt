@@ -12,13 +12,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class MainActivityVM @Inject constructor(
-    private var apiRepository: RepositoryImpl,
-
-    private var firebaseRepository: FirebaseRepositoryImpl,
-
-    private var databaseRepositoryImpl: DatabaseImpl,
-) : AppViewModel() {
+class MainActivityVM @Inject constructor() : AppViewModel() {
 
     fun change() = viewModelScope.launch {
         apiRepository.sampleApiCall().collect {
