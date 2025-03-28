@@ -1,4 +1,4 @@
-package com.kashyap.mvvm_3_0.ui.base
+package com.kashyap.mvvm_3_0.di.ui.base
 
 import android.os.Bundle
 import android.widget.TextView
@@ -7,7 +7,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.kashyap.mvvm_3_0.BR
 import com.kashyap.mvvm_3_0.R
-import com.kashyap.mvvm_3_0.di.ui.base.AppViewModel
 import org.aviran.cookiebar2.CookieBar
 
 abstract class AppActivity<binding : ViewDataBinding, viewModel : AppViewModel> : AppCompatActivity() {

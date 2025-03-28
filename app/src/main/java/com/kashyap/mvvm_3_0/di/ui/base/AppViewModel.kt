@@ -13,6 +13,7 @@ open class AppViewModel @Inject constructor() : ViewModel() {
     @Inject
     lateinit var apiRepository: RepositoryImpl
 
+
     @Inject
     lateinit var firebaseRepository: FirebaseRepositoryImpl
 
