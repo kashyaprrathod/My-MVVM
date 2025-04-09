@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.kashyap.mvvm_3_0.R
 import com.kashyap.mvvm_3_0.databinding.ActivityMainBinding
 import com.kashyap.mvvm_3_0.di.ui.base.AppActivity
-import com.kashyap.mvvm_3_0.ui.diff_utils.custom_diff.ListAdapterCustomDiffUtilsConceptActivity
+import com.kashyap.mvvm_3_0.ui.diff_utils.async_differ.AsyncDifferConceptActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -15,7 +15,7 @@ class MainActivity : AppActivity<ActivityMainBinding, MainActivityVM>() {
 
     override fun onActivityCreated() {
         binding.btnPaging.setOnClickListener {
-            startActivity(ListAdapterCustomDiffUtilsConceptActivity.newIntent(this))
+            startActivity(AsyncDifferConceptActivity.newIntent(this))
         }
     }
 }
