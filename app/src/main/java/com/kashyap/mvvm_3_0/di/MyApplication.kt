@@ -1,4 +1,4 @@
-package com.kashyap.mvvm_3_0
+package com.kashyap.mvvm_3_0.di
 
 import android.app.Application
 import android.util.Log

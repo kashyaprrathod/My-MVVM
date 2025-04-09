@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -18,7 +19,9 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/infoColor">
 
         <ImageView
             android:id="@+id/image"
@@ -27,11 +30,19 @@
 
         <TextView
             android:id="@+id/actor_name"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:padding="10dp"
-            android:textSize="18sp" />
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="Hello" />
 
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_launcher_background" />
     </FrameLayout>
 </layout>

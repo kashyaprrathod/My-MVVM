@@ -7,13 +7,8 @@ import javax.inject.Inject
 
 class DatabaseImpl @Inject constructor(private val database: DatabaseHelper) {
 
-    fun addUser() = flow<Any> {
-        database.studentDao().addData(
-            UserTable(
-                firstName = "kashyap",
-                lastName = "rathod"
-            )
-        )
+    fun addUser(user: UserTable) = flow<Any> {
+        database.studentDao().addData(user)
     }
 
     fun getUser() = flow<Any> {

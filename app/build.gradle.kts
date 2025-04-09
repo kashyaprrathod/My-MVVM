@@ -26,10 +26,11 @@ android {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
 
-            buildConfigField("String", "BASE_URL", "\"https://hilightai.com:5000/\"")
+            buildConfigField("String", "BASE_URL", "\"https://reqres.in/\"")
         }
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://hilightai.com:5000/\"")
+
+            buildConfigField("String", "BASE_URL", "\"https://reqres.in/\"")
         }
     }
 
@@ -67,6 +68,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.fragment.ktx)
 
     //google
     implementation(libs.play.services.location)
@@ -83,6 +85,9 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.firebase.messaging.ktx)
 
+    //Paging
+    implementation(libs.androidx.paging.runtime.ktx)
+
     //Coroutines
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
@@ -91,6 +96,7 @@ dependencies {
     //Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     //Room
     implementation(libs.androidx.room.runtime)

@@ -1,16 +1,18 @@
+package com.kashyap.mvvm_3_0.data.user
+
 import com.google.gson.annotations.SerializedName
 
 data class UserBean(
     @SerializedName("id")
     val id: Int = 0,
 
-    @SerializedName("name")
+    @SerializedName("first_name")
     var firstName: String = "",
 
     @SerializedName("email")
     var email: String = "",
 
-    @SerializedName("profile_picture")
+    @SerializedName("avatar")
     var profilePhoto: String = "",
 
     @SerializedName("country_id")
@@ -33,29 +35,12 @@ data class UserBean(
 
     @SerializedName("room_no")
     var roomNo: Int = 0,
+) {
 
-    @SerializedName("auth")
-    var authentication: Authentication = Authentication("", 0, "", ""),
-
-    @SerializedName("item")
-    val itemBean: ArrayList<ItemBean> = ArrayList(),
-)
-
-data class Authentication(
-    @SerializedName("access_token")
-    var accessToken: String = "",
-
-    @SerializedName("expires_in")
-    var expiresIn: Int = 0,
-
-    @SerializedName("refresh_token")
-    var refreshToken: String = "",
-
-    @SerializedName("token_type")
-    var tokenType: String = ""
-)
-
-data class ItemBean(
-    @SerializedName("name")
-    var name: String = "",
-)
+    fun getFreshInstance(): UserBean {
+        return UserBean(
+            id = this.id,
+            email = this.email
+        )
+    }
+}

@@ -1,4 +1,4 @@
-package com.kashyap.mvvm2.di.remote.retrofit.helper
+package com.kashyap.mvvm_3_0.di.remote.helper
 
 import android.util.Log
 import androidx.annotation.MainThread

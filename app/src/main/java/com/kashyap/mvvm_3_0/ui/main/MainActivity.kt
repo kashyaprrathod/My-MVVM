@@ -3,7 +3,8 @@ package com.kashyap.mvvm_3_0.ui.main
 import androidx.lifecycle.ViewModelProvider
 import com.kashyap.mvvm_3_0.R
 import com.kashyap.mvvm_3_0.databinding.ActivityMainBinding
-import com.kashyap.mvvm_3_0.ui.base.AppActivity
+import com.kashyap.mvvm_3_0.di.ui.base.AppActivity
+import com.kashyap.mvvm_3_0.ui.rv_list_adapter.ListAdapterConceptActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -13,6 +14,8 @@ class MainActivity : AppActivity<ActivityMainBinding, MainActivityVM>() {
     }
 
     override fun onActivityCreated() {
-        vm.addDataToFirebase()
+        binding.btnPaging.setOnClickListener {
+            startActivity(ListAdapterConceptActivity.newIntent(this))
+        }
     }
 }
