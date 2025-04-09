@@ -28,6 +28,7 @@
         </activity>
 
         <activity android:name=".ui.rv_list_adapter.ListAdapterConceptActivity" />
+        <activity android:name=".ui.rv_list_custom_diff.ListAdapterCustomDiffUtilsConceptActivity" />
     </application>
 
 </manifest>
