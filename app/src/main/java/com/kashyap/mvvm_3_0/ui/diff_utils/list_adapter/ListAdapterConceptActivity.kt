@@ -1,4 +1,4 @@
-package com.kashyap.mvvm_3_0.ui.rv_list_adapter
+package com.kashyap.mvvm_3_0.ui.diff_utils.list_adapter
 
 import android.content.Context
 import android.content.Intent

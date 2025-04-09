@@ -1,4 +1,4 @@
-package com.kashyap.mvvm_3_0.ui.rv_list_custom_diff
+package com.kashyap.mvvm_3_0.ui.diff_utils.custom_diff
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.kashyap.mvvm_3_0.data.user.UserBean
 import com.kashyap.mvvm_3_0.databinding.RowSampleItemBinding
-import com.kashyap.mvvm_3_0.ui.rv_list_custom_diff.ListCustomDiffUtilsConceptAdapter.VHolder
+import com.kashyap.mvvm_3_0.ui.diff_utils.custom_diff.ListCustomDiffUtilsConceptAdapter.VHolder
 
 class ListCustomDiffUtilsConceptAdapter(val delete: (UserBean) -> Unit, val edit: (UserBean) -> Unit) : RecyclerView.Adapter<VHolder>() {
     private val list = mutableListOf<UserBean>()

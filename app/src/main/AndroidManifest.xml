@@ -27,8 +27,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.rv_list_adapter.ListAdapterConceptActivity" />
-        <activity android:name=".ui.rv_list_custom_diff.ListAdapterCustomDiffUtilsConceptActivity" />
+        <activity android:name=".ui.diff_utils.list_adapter.ListAdapterConceptActivity" />
+        <activity android:name=".ui.diff_utils.custom_diff.ListAdapterCustomDiffUtilsConceptActivity" />
     </application>
 
 </manifest>

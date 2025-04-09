@@ -1,4 +1,4 @@
-package com.kashyap.mvvm_3_0.ui.rv_list_custom_diff
+package com.kashyap.mvvm_3_0.ui.diff_utils.custom_diff
 
 import android.content.Context
 import android.content.Intent
