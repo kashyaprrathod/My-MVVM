@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Mvvm - 3.0"
+rootProject.name = "MVI - 1.0"
 include(":app")
  

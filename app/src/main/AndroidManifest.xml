@@ -18,7 +18,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".presentation.screens.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,10 +27,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.diff_utils.list_adapter.ListAdapterConceptActivity" />
-        <activity android:name=".ui.diff_utils.custom_diff.ListAdapterCustomDiffUtilsConceptActivity" />
-        <activity android:name=".ui.diff_utils.async_differ.AsyncDifferConceptActivity" />
-        <activity android:name=".ui.paging.PagingActivity" />
+        <activity android:name=".presentation.diff_utils.list_adapter.ListAdapterConceptActivity" />
+        <activity android:name=".presentation.diff_utils.custom_diff.ListAdapterCustomDiffUtilsConceptActivity" />
+        <activity android:name=".presentation.diff_utils.async_differ.AsyncDifferConceptActivity" />
+        <activity android:name=".presentation.paging.PagingActivity" />
     </application>
 
 </manifest>

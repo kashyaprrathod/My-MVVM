@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.devtools.ksp)
-    alias(libs.plugins.jetbrains.kotlin.kapt)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.androidGoogleService)
     alias(libs.plugins.hilt)
 }
@@ -44,18 +44,12 @@ android {
 
     buildFeatures {
         buildConfig = true
-        dataBinding = true
-        viewBinding = true
+        compose = true
     }
 
     hilt {
         enableAggregatingTask = false
     }
-}
-
-// Allow references to generated code
-kapt {
-    correctErrorTypes = true
 }
 
 dependencies {
@@ -68,6 +62,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
 
     //google
     implementation(libs.play.services.location)
