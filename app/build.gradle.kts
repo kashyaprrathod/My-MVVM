@@ -29,7 +29,6 @@ android {
             buildConfigField("String", "BASE_URL", "\"https://reqres.in/\"")
         }
         debug {
-
             buildConfigField("String", "BASE_URL", "\"https://reqres.in/\"")
         }
     }
